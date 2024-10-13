@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Workshop</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .div{
             display: flex;
             align-items: center;
@@ -12,10 +17,52 @@
             flex-direction: column;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
+        nav{
+            height: 70px;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-container{
+            width: 50%;
+        }
+
+        
+        .nav-container ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .nav-container ul li{
+            padding: 0px 30px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .logo img{
+            width: 30px;
+            margin-left: 30px;
+        }
 
     </style>
 </head>
 <body>
+
+    <nav>
+        <div class="logo">
+            <img src="appico.ico" alt="">
+        </div>
+        <div class="nav-container">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="div">
         <h1>github workshop</h1>
